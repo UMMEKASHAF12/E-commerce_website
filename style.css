@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #fff;
+}
+/* button shop now*/
+.button-5 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fd4646;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-5:hover,
+.button-5:focus {
+  background-color: #990505;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+  transform: translateY(-1px);
+}
+
+.button-5:active {
+  background-color: #990505;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+.animate__animated.animate__backInUp{
+  --animate-duration: 2s;
+}
+
+/*Cards*/
+
+.Cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.box {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.box img {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(65%);
+  transition: transform 0.5s ease;
+}
+
+.box:hover img,
+.box:active img {
+  transform: scale(1.1);
+}
+
+.label {
+  position: absolute;
+  bottom: 130px;
+  left: 90px;
+  background-color: rgba(255, 75, 75, 0.9);
+  color: #ffffff;
+  padding: 8px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  
+}
+
+/*Products-heading*/
+
+.products{
+  display: block;
+  text-align: center;
+  margin-top: -70px;
+}
+
+/*Sections*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  position: relative;
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 100%;
+  height: 2px;
+  background-color: #ff3737;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+
+li a:hover::after {
+  transform: scaleX(1);
+}
+
+/*Product-card*/
+/*Women-section*/
+.box {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* Default image visible */
+.box .default {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Hover image hidden by default */
+.box .hover-img {
+  opacity: 0;
+  z-index: 2;
+}
+
+/* On hover: hide default, show hover image */
+.box:hover .default,
+.box:active .default {
+  opacity: 0;
+}
+
+.box:hover .hover-img,
+.box:active .hover-img {
+  opacity: 1;
+}
+
+.label {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 8px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  z-index: 3;
+}
+
+
+
+
+  
+
+ 
+
+ 
+
+  
