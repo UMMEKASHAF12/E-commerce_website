@@ -94,7 +94,7 @@ body {
   bottom: 130px;
   left: 90px;
   background-color: rgba(255, 75, 75, 0.9);
-  color: #ffffff;
+  color: #000000;
   padding: 8px 20px;
   font-size: 16px;
   font-weight: 500;
@@ -107,7 +107,7 @@ body {
 .products{
   display: block;
   text-align: center;
-  margin-top: -70px;
+  margin-top: 3px;
 }
 
 /*Sections*/
@@ -210,6 +210,59 @@ li a:hover::after {
   text-transform: uppercase;
   z-index: 3;
 }
+
+/*  Customer-section*/
+.reviews{
+  background: url(Images/customer.jpg) no-repeat center center/cover; 
+  position: relative;
+  color: #ffffff;
+  text-align: center;
+  padding: 80px 20px;
+
+}
+.main-bg{
+  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+  padding: 50px;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 10px;
+}
+.text{
+
+font-size: 16px;
+line-height: 1.6;
+margin-bottom: 30px;
+}
+.quotes {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+.customer-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.customer-name img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.customer-name h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.customer-name p {
+  margin: 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/*Best collection*/
 
 
 
